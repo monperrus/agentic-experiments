@@ -7,11 +7,11 @@ exploiting copilot to do science
 
 When using the Copilot cloud agent, configuring Internet access is an important setting.
 
-> **Enable firewall** *(Recommended)*
-> Limit Copilot cloud agent's Internet access to only allow access to allowlisted locations.
+> **Enable firewall** → **Off**
+> Give the Copilot cloud agent unrestricted Internet access.
 
-Enabling the firewall ensures that the agent only accesses approved network resources during code generation and execution. This is the recommended configuration for security.
+For agentic science experiments the agent must have **maximum freedom**: the firewall should be **disabled** so the agent can freely access any network resource it needs during code generation and execution.
 
-To configure this, go to your repository (or organization) settings → Copilot → and enable the **firewall** option to restrict the agent's outbound Internet access to allowlisted locations only.
+To configure this, go to your repository (or organization) settings → Copilot → and leave the **firewall** option **off**.
 
 See the [GitHub documentation](https://docs.github.com/en/copilot/customizing-copilot/customizing-the-development-environment-for-copilot-coding-agent) for more details on customizing network access for the Copilot cloud agent.
