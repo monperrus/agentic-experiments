@@ -2,6 +2,14 @@
 """
 Try the OpenRouter Responses API with free models to find which supports it best.
 
+Endpoint: POST https://openrouter.ai/api/v1/responses
+Docs:     https://openrouter.ai/docs/api/reference/responses/overview
+
+Results (June 2026):
+  google/gemma-4-31b-it:free   OK  0.65s  -- best free model for Responses API
+  openrouter/free              OK  2.3s   -- random-free router, also works
+  others                       429        -- rate-limited on Venice/Crucible
+
 Usage:
     export OPENROUTER_API_KEY=sk-or-...
     python responses_api.py
